@@ -6,7 +6,7 @@ import java.util.Random;
 
 import org.fly.tool.arithmetic.constant.MarkEnum;
 import org.fly.tool.arithmetic.data.ArithmeticData;
-import org.fly.tool.arithmetic.print.PrintTool;
+import org.fly.tool.arithmetic.output.PrintTool;
 
 public class ArithmeticCreateCore {
 
@@ -18,28 +18,28 @@ public class ArithmeticCreateCore {
 
 		int index = 0;
 		while (index < cmdArray.length) {
-			if ("-+".equals(cmdArray[index].trim())) {
+			if ("-+".equals(cmdArray[index].trim()) || "+".equals(cmdArray[index].trim())) {
 				int count = Integer.valueOf(cmdArray[index + 1].trim());
 				for (int i = 0; i < count; i++) {
 					ArithmeticData itemData = createAddition(figures);
 					dataList.add(itemData);
 				}
 			}
-			if ("--".equals(cmdArray[index].trim())) {
+			if ("--".equals(cmdArray[index].trim()) || "-".equals(cmdArray[index].trim())) {
 				int count = Integer.valueOf(cmdArray[index + 1].trim());
 				for (int i = 0; i < count; i++) {
 					ArithmeticData itemData = createSubtraction(figures);
 					dataList.add(itemData);
 				}
 			}
-			if ("-*".equals(cmdArray[index].trim())) {
+			if ("-*".equals(cmdArray[index].trim()) || "*".equals(cmdArray[index].trim())) {
 				int count = Integer.valueOf(cmdArray[index + 1].trim());
 				for (int i = 0; i < count; i++) {
 					ArithmeticData itemData = createMultiplication(figures);
 					dataList.add(itemData);
 				}
 			}
-			if ("-/".equals(cmdArray[index].trim())) {
+			if ("-/".equals(cmdArray[index].trim()) || "/".equals(cmdArray[index].trim())) {
 				int count = Integer.valueOf(cmdArray[index + 1].trim());
 				for (int i = 0; i < count; i++) {
 					ArithmeticData itemData = createDivision(figures);
@@ -126,7 +126,7 @@ public class ArithmeticCreateCore {
 		List<ArithmeticData> dataList = demo.createRandomArithmetic(2, cmdStr);
 
 		for (ArithmeticData itemData : dataList) {
-			PrintTool.printlnArithmetic(itemData);
+			PrintTool.printArithmetic(itemData);
 		}
 
 		// PrintTool.print(String.valueOf(demo.randomNumber(1)));

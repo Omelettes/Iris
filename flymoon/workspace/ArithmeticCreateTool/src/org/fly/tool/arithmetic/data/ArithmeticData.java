@@ -3,17 +3,19 @@ package org.fly.tool.arithmetic.data;
 import org.fly.tool.arithmetic.constant.MarkEnum;
 
 public class ArithmeticData {
-	
-	//×ó±ßÊı
+
+	public static int DIVISION_FLOAT_COUNT = 2;
+
+	// å·¦è¾¹æ•°
 	private double leftNumber;
-	
-	//·ûºÅ
+
+	// ç¬¦å·
 	private MarkEnum markEnum;
-	
-	//ÓÒ±ßÊı
+
+	// å³è¾¹æ•°
 	private double rightNumber;
-	
-	//½á¹û
+
+	// ç»“æœ
 	private double resultNumber;
 
 	public double getLeftNumber() {
@@ -46,5 +48,50 @@ public class ArithmeticData {
 
 	public void setResultNumber(double resultNumber) {
 		this.resultNumber = resultNumber;
+	}
+
+	public String getArithmeticStr() {
+		String markStr = null;
+		switch (markEnum) {
+		case addition:
+			markStr = "+";
+			break;
+		case subtraction:
+			markStr = "-";
+			break;
+		case multiplication:
+			markStr = "*";
+			break;
+		case division:
+			markStr = "/";
+			break;
+		default:
+			break;
+		}
+
+		String msg = String.format(" %.0f %s %.0f = ", getLeftNumber(), markStr, getRightNumber());
+
+		return msg;
+	}
+
+	public String getFormatResultNumber() {
+		int floatCount = 0;
+		if (markEnum == MarkEnum.division) {
+			floatCount = DIVISION_FLOAT_COUNT;
+		}
+
+		String floatMsg = String.format(String.format("%%.%df", floatCount), getResultNumber());
+
+		return floatMsg;
+	}
+
+	/**
+	 * å°†ç®—æœ¯é¢˜ç›®å¯¹è±¡è½¬æ¢æˆå­—ç¬¦ä¸²
+	 */
+	@Override
+	public String toString() {
+
+		String msg = getArithmeticStr() + getFormatResultNumber();
+		return msg;
 	}
 }
