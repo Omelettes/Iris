@@ -1,0 +1,11 @@
+HTML学习笔记：
+DTD：文档类型定义(Document Type Definition)	是一套为了进行程序间的数据交换而建立的关于标记符的语法规则。
+<b>和<strong>都代表加粗文本，但<strong>表示更加重要
+
+超链接a属性：
+	href="" 
+	target="_blank":新窗口,"_self":自身,"_top":顶层框架,"_parent":父框架
+	media,指定目标url所引用的媒体类型，默认为all
+
+desginMode属性：
+	desginMode属性相当于一个全局的contentEditable属性

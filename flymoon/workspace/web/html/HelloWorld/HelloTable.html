@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<title>这是一个表格</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<table style="width:400px" border="1">
+		<caption><b>我的表格--普通表格</b></caption>
+		<tr>
+			<th>书名</th>
+			<th>作者</th>
+		</tr>
+		<tr>
+			<td>从前的故事</td>
+			<td>逍遥荷包蛋</td>
+		</tr>
+		<tr>
+			<td>未来的故事</td>
+			<td>逍遥荷包蛋</td>
+		</tr>
+	</table>
+
+	<table style="width:400px" border="1">
+	<caption>我的表格--跨行列表格</caption>
+	<tr>
+		<td rowspan="2">跨2行单元格</td>
+		<td>普通单元格</td>
+	</tr>
+	<tr>
+		<td>普通单元格</td>
+	</tr>
+	<tr>
+		<td colspan="2">跨2列的单元格</td>
+	</tr>
+	<tr>
+		<td>普通单元格</td>
+		<td>普通单元格</td>
+	</tr>		
+	</table>
+
+	<table border="1" style="width:400px">
+		<caption>我的表格--thead、tbody、tfoot应用</caption>
+		<thead>
+			<tr>
+				<th>书名</th>
+				<th>作者</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="2" style="text-align:right">现总计：2本图书</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+			<td>从前的故事</td>
+			<td>逍遥荷包蛋</td>
+			</tr>
+			<tr>
+			<td>未来的故事</td>
+			<td>逍遥荷包蛋</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table border="1" style="width:400px">
+		<caption>我的表格--colgroup的应用，属性设置</caption>
+		<colgroup style="background-color:green;">
+			<col style="width:160px">
+			<col span="2" style="width:100px">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>书名</th>
+				<th>作者</th>
+				<th>价格</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="3" style="text-align:right">现总计：2本图书</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+			<td>从前的故事</td>
+			<td>逍遥荷包蛋</td>
+			<td>189</td>
+			</tr>
+			<tr>
+			<td>未来的故事</td>
+			<td>逍遥荷包蛋</td>
+			<td>189</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
