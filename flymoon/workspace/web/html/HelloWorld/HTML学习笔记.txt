@@ -9,3 +9,11 @@ DTD：文档类型定义(Document Type Definition)	是一套为了进行程序�
 
 desginMode属性：
 	desginMode属性相当于一个全局的contentEditable属性
+
+http meta常用有效属性值
+	Expires 指定网页的过期时间。一旦网页过期，必须重新从服务器上下载
+	Pragma 指定禁止浏览器从本地磁盘缓存中调阅页面内容，浏览器一旦离开该网页就无法脱机访问该页面
+	Refresh 指定浏览器多长时间后自动刷新指定页面
+	Set-Cookie 设置Cookie。如果网页过期，客户端上的Cookie也将被删除
+	content-Type 设置该页面的内容类型和所用的字符集
+	base 只能是url链接

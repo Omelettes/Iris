@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<article>
+		<header>
+			<h1>学习aaa必须bbbb这是文章头部</h1>
+			<div>逍遥荷包蛋</div>
+		</header>
+		<p>
+			中间区域
+		</p>	
+		<!--帖子的回复部分，用section元素表示-->
+		<section>
+			<article>
+				<header>
+					<h1>学习aaa必须bbbb这是回复的头部</h1>
+					<div>逍遥荷包蛋</div>
+				</header>
+			</article>
+		</section>
+		<footer>
+			这是帖子的注脚
+		</footer>
+	</article>
+
+	<!--以下为边栏-->
+	<article>
+		<header>以下为边栏</header>
+	</article>
+	<p></p>
+
+	<article>
+		<header>
+			<div>文章边栏头部</div>
+		</header>
+		<footer>
+			文章边栏注脚
+		</footer>
+		<aside>
+			<h3>文章内部关于楼主</h3>
+			<section>
+				<div>用户组1：编程摸索着</div>
+				<div>用户组2：编程摸索着</div>
+				<div>用户组3：编程摸索着</div>
+				<div>用户组4：编程摸索着</div>
+				<div>用户组5：编程摸索着</div>
+			</section>
+		</aside>
+	</article>
+
+	<aside>
+			<h3>body内部 页面导航</h3>
+			<nav>
+				<ul>
+					<li><a href="#">查看相关内容</a></li>
+					<li><a href="./HelloWorld.html">返回HelloWorld</a></li>
+					<li><a href="./HelloImage.html">返回HelloImage</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<figure style="border:2px solid black;padding:5px;width:500px">
+			<figcaption><b>动漫美女图片</b></figcaption>
+			<img src="../resource/girl.jpg" alt="动漫美女">
+		</figure>
+
+<p>以下为语义相关</p>
+		<article>
+		<header>
+			<div>语义头部</div>
+		</header>
+
+		<mark>ABCDE</mark>ABCDE
+		<time datetime="17:30">下午5点半</time> <br/>
+		<footer>
+			语义注脚
+		</footer>
+	</article>
+
+	<details>
+		<summary>芙蓉镇</summary>
+		芙蓉镇是一部很好的电影
+	</details>
+
+	当前行车速度是：<meter value="120" min="0" max="220" low="0" high="160">120</meter>千米/小时
+	任务完成比：<progress value="30" max="100">30/100</progress>
+</body>
+</html>

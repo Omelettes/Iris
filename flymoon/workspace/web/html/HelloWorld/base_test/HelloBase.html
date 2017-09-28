@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<title>Hello World!</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<a name="head"></a>
+
+	Hello World!
+	<p>Hello World!</p>
+	<h1>H1:Hello World!</h1>
+	<h2>H2:Hello World!</h2>
+<h3>H3:Hello World!</h3>
+<h4>H4:Hello World!</h4>
+<h5>H5:Hello World!</h5>
+<h6>H6:Hello World!</h6>
+
+<!--输出一条水平线-->
+<hr />
+
+<span>Tomcat</span><span>Jetty</span><span>Resin</span>
+
+<!--输出换行-->
+<br>
+
+<div>Tomact</div><div>Jetty</div><div>Resin</div>
+<p>Tomcat<p>Jetty<p>Resin
+
+<p><b>***************************文本格式化*********************</b></p>
+<span><b>加粗文本</b></span><br/>
+<span><i>斜体文本</i></span><br>
+<span><b><i>粗斜体文本</i></b></span><br>
+<span><em>被强调的文本</em></span><br>
+<span><big>大号字体文本</big></span><br>
+<span><strong>加粗文本(更加重要)</strong></span>
+<span><<small>小号字体文本</small></span><br>
+
+<div>普通文本<sup>上标文本</sup></div>
+<span>普通文本<strong><sub>下标加粗文本</sub></strong></span>
+<bdo dir="ltr">从左向右排列的文本</bdo><br>
+<bdo dir="rtl">从右向左排列的文本</bdo><br>
+
+<p><b>***************************语义相关***********************</b></p>
+<!--使用q表示一段短的引用文本-->
+<p>我将要访问的网址是<q cite="http://www.baidu.com">百度百度百度百度</q>这就是我访问的网站</p>
+
+<div>
+	<!--使用blockquote表示一段长的引用文本-->
+	<blockquote>
+		锦瑟无端五十弦，一弦一柱思华年。<br>
+		庄生晓梦迷蝴蝶，望帝春心托杜鹃。<br>
+		沧海月明珠有泪，蓝田日暖玉生烟。<br>
+		此情可待成追忆，只是当时已惘然。<br>
+	</blockquote>
+	是唐朝诗人李商隐的代表作，诗中隐藏着一种淡淡的忧伤，让人无法言说。
+</div>
+<p>
+<cite>《芙蓉镇》</cite>、<cite>《蓝风筝》</cite>是国内导演拍摄的最有思考深度的电影</p>
+
+<p>
+	下面代码定义了一个Java类：<br>
+	<code>
+		public class Cat<br>
+		{<br>
+			private int name="garfield";<br>
+		}<br>
+	</code>
+</p>
+
+<!--pre元素包涵的内容是“预格式化”文本-->
+<pre>
+	public class Cat
+	{
+		private int name="garfield";
+	}
+</pre>
+
+<p>
+	<!--使用abbr定义缩写-->
+	逍遥荷包蛋的缩写是<abbr title="逍遥">flymoon</abbr>
+
+	<!--使用address定义地址-->
+	逍遥荷包蛋的地址是<address>某某某村某某路123123123号</address>
+
+	<!--使用dfn定义专业术语-->
+	<p>
+		<dfn>HTML</dfn>是一种广为人知的标记语言。
+	</p>
+</p>
+
+<p>
+可通过输入如下命令：<br>
+<kbd>list -l</kbd>
+在Linux 的 shell窗口查看当前目录下的所有文件、目录的详细信息</p>
+
+<p>
+	这是没有用samp定义的文本a<br>
+这是没有用samp定义的文本b<br>
+</p>
+
+<!--使用samp定义示范文本内容-->
+<samp>
+	这是使用samp定义的示范文本内容a<br>
+	这是使用samp定义的示范文本内容b
+</samp>
+
+<!--使用var定义变量-->
+<var>i</var>、<var>j</var>、<var>k</var>通常用于作为循环计数器变量
+
+<!--使用del和ins表示修订-->
+<p>Android是一个<del>开发</del><ins>开放</ins>式的手机操作系统</p>
+
+
+<a href="www.baidu.com"><b>我是一个超链接</b></a>
+<a href="./HTML学习笔记.txt" target="_blank"><b>HTML学习笔记</b></a>
+<a href="./HTML学习笔记.txt" target="_parent" media="txt"></a>
+
+<!--该链接将会产生一个访问新闻组资源的超链接-->
+<a href="news:yeeku.html"> HTML Newsgroup</a>
+<!--产生指向ftp资源的链接-->
+<a href="ftp://www/crazyit.org/tomcat.rar">下载tomcat</a>
+
+<a href="mailto:454251132@qq.com">给我发个邮件</a>
+
+
+<a href="./HelloWorld.html#head">定位到head锚点</a>
+
+
+<!--列表相关-->
+<p><b><font color="red">*********************以下为列表相关***************</font></b></p>
+<ul>
+	<li>此为无序列表一</li>
+	<li>此为无序列表二</li>
+	<li>此为无序列表三</li>
+</ul>
+
+<ol start="2" type="I">
+	<li>此为有序列表一</li>
+	<li>此为有序列表二</li>
+	<li>此为有序列表三</li>
+</ol>
+
+<dl>
+	<dt>普通列表标题</dt>
+	<dd>普通列表内容</dd>
+	<dd>普通列表内容</dd>
+
+	<dt>普通列表标题</dt>
+	<dd>普通列表内容</dd>
+	<dd>普通列表内容</dd>
+</dl>
+<p><b><font color="red">*********************以下为图片相关***************</font></b></p>
+<img src="../resource/girl.jpg" alt="动漫美女图"><br/>
+<img src="../resource/girl.jpg" width="300" height="120" alt="宽300，高120">
+<img src="../resource/girl.jpg" width="300" height="120" border="0" usemap="#photo" alt="图片映射">
+<map name="photo" id="photo">
+	<area href="http://www.baidu.com" alt="百度" target="_blank" shape="circle" coords="57,55,25">
+	<area href="./HelloWorld.html" alt="HelloWorld#head" target="_blank" shape="poly" coords="188,28,185,50,200,74,224,72,246,51">
+</map>
+
+</body>
+</html>
