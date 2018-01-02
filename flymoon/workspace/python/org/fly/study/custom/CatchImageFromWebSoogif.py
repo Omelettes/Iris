@@ -86,7 +86,7 @@ def getImg(urls, localPath):
 
 
 if __name__ == '__main__':
-    keyword = '美女'
+    keyword = '仙剑四'
     urls = getManyPages(keyword, 10)
     print(urls)
     timeStr = time.strftime("%Y%m%d%H%M%S", time.localtime())
